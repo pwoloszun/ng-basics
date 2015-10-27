@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MyApp">
 <head>
   <link rel="stylesheet" href="css/app.css"/>
 
@@ -9,21 +9,33 @@
   <script src="vendor/angular.js"></script>
 
   <!-- app scripts -->
-  <script src="js/utils.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services/peopleSearchSrv.js"></script>
   <script src="js/controllers/PeopleListCtrl.js"></script>
   <script src="js/controllers/PersonCtrl.js"></script>
-  <script src="js/bootstrap.js"></script>
 </head>
 <body>
 <div class="main">
 
+  <h3>Person Controller</h3>
   <div ng-controller="PersonCtrl">
     <h3>Name: {{person.name}}</h3>
     <input ng-model="person.name" type="text"/>
   </div>
 
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+  <h3>People List Controller</h3>
   <div ng-controller="PeopleListCtrl">
     <ul>
       <li ng-repeat="person in people" ng-click="greetWith(person)">
