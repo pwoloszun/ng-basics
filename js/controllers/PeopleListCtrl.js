@@ -5,7 +5,7 @@ MyApp.controller("PeopleListCtrl", [
     $scope.people = peopleSearchSrv.findAll();
 
     $scope.greetWith = function(person) {
-      log("Hi " + person.name + "!");
+      console.log("Hi " + person.name + "!");
     };
 
     $scope.createNew = function() {
